@@ -3,7 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mensagem Especial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            width: 50%;
+            height: 4px;
+            background: #fff;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #e0e0e0;
+        }
+
+        /* Animação simples */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, professor Mário, seu lindo!!</h1>
